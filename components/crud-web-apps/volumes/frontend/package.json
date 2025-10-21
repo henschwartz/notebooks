@@ -82,6 +82,10 @@
   },
   "overrides": {
     "@types/request": "2.48.8",
-    "@types/tough-cookie": "2.3.5"
+    "@types/tough-cookie": "2.3.5",
+    "@kubernetes/client-node": {
+      "@types/request": "2.48.8",
+      "@types/tough-cookie": "2.3.5"
+    }
   }
 }
