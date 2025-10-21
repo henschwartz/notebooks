@@ -17,7 +17,8 @@
     "lint": "ng lint --fix",
     "ui-test": "cypress open . --e2e",
     "ui-test-ci": "cypress run . --e2e",
-    "ui-test-ci-all": "cypress run . --e2e --browser=chrome && cypress run . --e2e --browser=firefox"
+    "ui-test-ci-all": "cypress run . --e2e --browser=chrome && cypress run . --e2e --browser=firefox",
+    "debug-versions": "echo '=== Package Versions Debug ===' && npm list @types/request @types/tough-cookie tough-cookie cypress --depth=0 && echo '=== Kubernetes client versions ===' && npm list @kubernetes/client-node --depth=1"
   },
   "private": true,
   "dependencies": {
@@ -83,9 +84,11 @@
   "overrides": {
     "@types/request": "2.48.8",
     "@types/tough-cookie": "2.3.5",
+    "tough-cookie": "2.5.0",
     "@kubernetes/client-node": {
       "@types/request": "2.48.8",
-      "@types/tough-cookie": "2.3.5"
+      "@types/tough-cookie": "2.3.5",
+      "tough-cookie": "2.5.0"
     }
   }
 }
