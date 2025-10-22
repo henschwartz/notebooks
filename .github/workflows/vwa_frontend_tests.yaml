@@ -40,7 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-       - name: Setup node version to 18
+      - name: Setup node version to 18
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -67,7 +67,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-       - name: Setup node version to 18
+      - name: Setup node version to 18
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -99,7 +99,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-       - name: Setup node version to 18
+      - name: Setup node version to 18
         uses: actions/setup-node@v4
         with:
           node-version: 18
