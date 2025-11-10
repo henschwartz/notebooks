@@ -6,13 +6,14 @@ on:
       - main
       - v*-branch
       - notebooks-v1
+      - upgrade-pvcviewer-go-1.24-clean
     paths:
       - components/pvcviewer-controller/**
       - components/common/**
       - releasing/version/VERSION
 
 env:
-  IMG: ghcr.io/kubeflow/notebooks/pvcviewer-controller
+  IMG: ghcr.io/henschwartz/notebooks/pvcviewer-controller
   ARCH: linux/amd64,linux/ppc64le,linux/arm64/v8
 
 jobs:
